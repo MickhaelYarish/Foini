@@ -1,0 +1,11 @@
+@function pxToEm($target, $context: 16px){
+ @return ($target / $context) * 1em;   
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

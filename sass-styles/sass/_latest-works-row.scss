@@ -1,0 +1,128 @@
+.latest-works-row {
+    margin-top: 20px;
+     text-align: center;
+    .nav-tabs{
+       display: inline-block;
+       border:none;
+        .nav-item{
+            .nav-link{
+                padding: 10px 0px;
+                margin: 0px 10px;
+                
+                display: block;
+                border-radius: 0px;
+                color:#434243;
+                font-family: $roboto;
+                font-weight:$light;
+                font-size: $li-size;
+            }
+        }
+    }
+    .nav-tabs .nav-link:hover {
+       
+    border-color: $floral-white;
+        border-bottom-color: $green-crayola;
+        color:$green-crayola;
+}
+    
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-link.active:focus,
+    .nav-tabs .nav-link:focus,
+     {
+        background: none;
+        border: none;
+        border-bottom: 1px solid $green-crayola;
+        color: $green-crayola;
+    }
+   
+    .row {
+        border: 1px solid white;
+        margin: 40px 75px 0px 75px;
+        .col-md-4 {
+            padding: 0px;
+        }
+    }
+    .primary-button{
+    background: $green-crayola;
+  
+    display: inline-block;
+    margin-top: 37px;
+    a{
+        padding: 10px 45px;
+        display: block;
+         border: 1px solid $green-crayola;
+        color:$floral-white;
+        font-weight: $thin;
+        font-family: $roboto;
+        font-size: $latest-works-row-button-size;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &:hover{
+    background: none;
+
+    a{color:$green-crayola;}
+    
+}
+}
+}
+
+
+
+
+@media (max-width: 543px) {
+.latest-works-row {
+ 
+    margin-top: 40px;
+    .nav-tabs{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      
+        .nav-item{
+            margin: 0px;
+            width: 100%;
+            .nav-link{
+                padding: 8px 0px;
+               
+                
+                display: block;
+                font-weight:300;
+                font-size: 4.5vw;
+            }
+        }
+    }
+   
+    .row {
+        border: 1px solid white;
+        margin: 30px 10px 0px 10px;
+        img{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}    
+    
+    
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+    
+    .latest-works-row {
+           padding-bottom: 40px;
+        .row{
+          border: 1px solid white;
+        margin: 30px 5px 0px 5px;
+        img{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

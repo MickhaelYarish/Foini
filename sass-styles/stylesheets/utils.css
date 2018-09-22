@@ -1,0 +1,6 @@
+/* line 5, ../sass/utils.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

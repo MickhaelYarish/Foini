@@ -1,0 +1,164 @@
+.pricing-plans-row {
+    margin: 0px 75px;
+    margin-top: 40px;
+    padding-bottom: 100px;
+    .plan-column {
+        text-align: center;
+        color: $taupe-gray;
+        padding: 0 7px;
+        h2 {
+            font-family: $roboto;
+            font-weight: $thin;
+            font-size: $pricing-name-size;
+            margin-bottom: 20px;
+        }
+        .content {
+            padding-bottom: 20px;
+            border: 1px solid $floral-white;
+            p {
+                margin-bottom: 20px;
+                border: 1px solid $taupe-gray;
+                padding: 20px;
+                color: $outer-space;
+                font-family: $roboto-slab;
+                font-weight: $regular;
+                font-size: $price-size;
+                sup {
+                    font-size: $dollar-sign-size;
+                }
+                sub {
+                    font-weight: $thin;
+                    font-size: $mounth-size;
+                }
+            }
+            ul {
+                li {
+                    font-size: $pricing-name-size;
+                    font-family: $roboto;
+                    margin-top: 16px;
+                }
+            }
+            .order-button {
+                display: inline-block;
+                border: 1px solid $taupe-gray;
+                margin-top: 40px;
+                padding: 10px;
+              
+                a{
+                    font-family: $roboto;
+                    
+                    font-size: $pricing-name-size;
+                      color: $outer-space;
+                }
+            }
+        }
+        &:hover {
+            h2 {
+                color: $green-crayola;
+            }
+            .content {
+                border: 1px solid $green-crayola;
+            }
+            p {
+                background: $green-crayola;
+                border-color: $green-crayola;
+                color: $floral-white;
+            }
+            .order-button {
+                border-color: $green-crayola;
+                background: $green-crayola;
+               
+                a{
+                     color: $floral-white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 543px) {
+    .heading {
+        margin-top: 40px;
+    }
+    .pricing-plans-row {
+        margin: 0px -2%;
+        padding-bottom: 30px;
+        .plan-column {
+            margin-top: 40px;
+            padding: 0 5px;
+            h2 {
+                font-weight: $regular;
+                font-size: $pricing-name-size;
+                margin-bottom: 20px;
+            }
+            .content {
+                padding-bottom: 20px;
+                p {
+                    margin-bottom: 10px;
+                    padding: 20px;
+                    font-size: 24px;
+                    sup {
+                        font-size: 18px;
+                    }
+                    sub {
+                        font-size: 16px;
+                    }
+                }
+                ul {
+                    li {
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }
+                }
+                .order-button {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+    .pricing-plans-row {
+        margin: 0px 0px;
+        padding-bottom: 40px;
+        .plan-column {
+            padding: 0 5px;
+            h2 {
+                margin-top: 40px;
+                font-size: 18px;
+            }
+            .content {
+                .order-button {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pricing-plans-row {
+        margin: 0px 0px;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        .plan-column {
+            padding: 0 5px;
+            h2 {
+                font-size: 18px;
+            }
+            .content {
+                .order-button {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

@@ -1,0 +1,235 @@
+.heading {
+    padding-top: 1px;
+    .row-header {
+        margin-top: 100px;
+        text-align: center;
+        font-family: $roboto;
+        h1 {
+            font-size: $top-text-size;
+            font-weight: $medium;
+            .brand-name {
+                color: $green-crayola;
+                text-transform: uppercase;
+            }
+        }
+        p {
+            margin-top: 35px;
+            font-size: $text-under-top-size;
+            line-height: $lower-line-height;
+            font-weight: $thin;
+        }
+    }
+}
+
+.welcome-row {
+    margin-top: 55px;
+    .welcome-column {
+        padding: 0px;
+        text-align: center;
+        .class-with-pad {
+            padding: 0px 10px;
+            border: 1px solid $taupe-gray;
+            &:hover {
+                border-color: $green-crayola;
+            }
+            &:hover h2 {
+                color: $green-crayola;
+            }
+        }
+        .first-col,
+        .fourth-col {
+            margin-left: 20%;
+        }
+        .third-col,
+        .sixth-col {
+            margin-right: 20%;
+        }
+        .second-col,
+        .fifth-col {
+            margin: 0 10%;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 36px;
+        }
+        h2 {
+            margin-top: 10px;
+            display: inline-block;
+            font-family: $roboto;
+            font-size: $offers-size;
+            font-weight: $medium;
+        }
+        p {
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+            font-family: $roboto;
+            font-size: $offer-description-size;
+            font-weight: $thin;
+            line-height: $lower-line-height;
+        }
+    }
+}
+
+.second-row {
+    margin-top: 35px;
+}
+
+@media (max-width: 543px) {
+     .container {
+        width: 100%;
+    }
+    .heading {
+        .row-header {
+            margin-top: 30px;
+            h1 {
+                font-size: 7.2vw;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 3.3vw;
+                line-height: 1.4;
+                font-weight: 400;
+            }
+        }
+    }
+    .welcome-row {
+        margin-top: 40px;
+        .welcome-column {
+            padding: 0px;
+            margin: 0px;
+            .first-col,
+            .fourth-col {
+                margin-left: 2%;
+            }
+            .third-col,
+            .sixth-col {
+                margin-right: 2%;
+            }
+            .second-col,
+            .fifth-col {
+                margin: 0 1%;
+            }
+            img {
+                margin-top: 26px;
+            }
+            h2 {
+                margin-top: 8px;
+                font-size: 3.4vw;
+            }
+            p {
+                font-weight: 400;
+                text-align: center;
+                margin-top: 15px;
+                font-size: 3.1vw;
+                line-height: 1.2;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .second-row {
+        margin-top: 15px;
+    }
+    
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .heading {
+        .row-header {
+            margin-top: 40px;
+            h1 {
+                font-size: 5.8vw;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 2.5vw;
+                line-height: 1.2;
+                font-weight: 400;
+            }
+        }
+    }
+    .welcome-row {
+        margin-top: 40px;
+        .welcome-column {
+            padding: 0px;
+            margin: 0px;
+            .first-col,
+            .fourth-col {
+                margin-left: 2%;
+            }
+            .third-col,
+            .sixth-col {
+                margin-right: 2%;
+            }
+            .second-col,
+            .fifth-col {
+                margin: 0 1%;
+            }
+            img {
+                margin-top: 26px;
+            }
+            h2 {
+                margin-top: 8px;
+                font-size: 2vw;
+            }
+            p {
+                margin-top: 15px;
+                font-size: 1.6vw;
+                line-height: 1.6;
+                padding-bottom: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+    .second-row {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .heading {
+        .row-header {
+            margin-top: 60px;
+            h1 {
+                font-size: 3vw;
+            }
+            p {
+                margin-top: 25px;
+                font-size: 1.8vw;
+                line-height: $lower-line-height;
+            }
+        }
+    }
+    .welcome-row {
+        margin-top: 45px;
+        .welcome-column {
+            .class-with-pad {}
+            .first-col,
+            .fourth-col {
+                margin-left: 10%;
+            }
+            .third-col,
+            .sixth-col {
+                margin-right: 10%;
+            }
+            .second-col,
+            .fifth-col {
+                margin: 0 2%;
+            }
+        }
+    }
+    .second-row {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

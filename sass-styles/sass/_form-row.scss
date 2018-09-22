@@ -1,0 +1,105 @@
+.footer-container {
+    h1 {
+        text-transform: uppercase;
+        color: white;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        font-size: $top-text-size;
+        font-weight: $regular;
+        font-family: $roboto;
+    }
+    .form-row {
+        margin: 0 -15px;
+        padding-top: 1px;
+        text-align: center;
+        background-image: url('../images/form-background-lg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        -moz-background-size: cover;
+        padding-bottom: 20px;
+        form {
+            margin: 0 21%;
+            .col-xs-12 {
+                ::-webkit-input-placeholder {
+                    color: $floral-white;
+                    font-family: $roboto;
+                    font-weight: $thin;
+                    font-size: 14px;
+                    font-style: italic;
+                }
+                ::-moz-placeholder {
+                    color: $floral-white;
+                }
+                :-moz-placeholder {
+                    color: $floral-white;
+                }
+                :-ms-input-placeholder {
+                    color: $floral-white;
+                }
+                padding: 0 10px;
+                .form-control {
+                    color: $floral-white;
+                    border-radius: 0px;
+                    background: none;
+                    border: 1.5px solid $taupe-gray;
+                    &:focus{
+                        border-color:$green-crayola;
+                    }
+                }
+            }
+            .btn-primary {
+                margin-top: 20px;
+                background: $green-crayola;
+                display: inline-block;
+                border-radius: 0px;
+                padding: 10px 25px;
+                border: 1px solid $green-crayola;
+                color: $floral-white;
+                font-weight: $thin;
+                font-family: $roboto;
+                font-size: $latest-works-row-button-size;
+            }
+        }
+    }
+}
+
+@media (max-width: 543px) {
+    
+     .footer-container {
+        .form-row {
+            background-image: url('../images/form-background-xs.png');
+            form {
+                margin: 0 5%;
+            }
+        }
+    }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+    .footer-container {
+        .form-row {
+            background-image: url('../images/form-background-xs.png');
+            form {
+                margin: 0 10%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-container {
+        .form-row {
+            background-image: url('../images/form-background-md.png');
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     .footer-container {
+        .form-row {
+            background-image: url('../images/form-background-md.png');
+        }
+    }
+}
+
+@media (min-width: 1200px) {}

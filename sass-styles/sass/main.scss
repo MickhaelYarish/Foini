@@ -1,0 +1,21 @@
+
+@import "compass/reset";
+@import "utils.scss";
+@import "config.scss";
+body{
+    background: $floral-white;
+}
+//Header
+@import "_header.scss";
+@import "_welcome-row.scss";
+@import "_meet-us-row.scss";
+@import "_latest-works-row.scss";
+@import "_pricing-plans";
+@import "_form-row";
+@import "_footer";
+
+
+
+
+        
+        
